@@ -3,25 +3,25 @@
 ### School of Mathematical and Computational Sciences
 
 **Student:** Jefferson Daniel Lamiña Valencia
-**Course:** Analysis of Algorithms [cite: 3]
+[cite_start]**Course:** Analysis of Algorithms [cite: 3]
 **Date:** March 2026
 
 ---
 
 ## Overview
-This repository contains the implementation of three fundamental algorithmic tasks focused on exhaustive search and graph traversal as part of Lab 04[cite: 3].
+[cite_start]This repository contains the implementation of three fundamental algorithmic tasks focused on exhaustive search and graph traversal as part of Lab 04[cite: 3].
 
-1. **0/1 Knapsack Problem:** Solving via Exhaustive Search to analyze exponential time complexity[cite: 4].
-2. **Depth First Search (DFS):** Graph traversal using an adjacency list[cite: 8, 9].
-3. **Breadth First Search (BFS):** Graph traversal using an adjacency list[cite: 10, 11].
+1. [cite_start]**0/1 Knapsack Problem:** Solving via Exhaustive Search to analyze exponential time complexity[cite: 4].
+2. [cite_start]**Depth First Search (DFS):** Graph traversal using an adjacency list[cite: 8].
+3. [cite_start]**Breadth First Search (BFS):** Graph traversal using an adjacency list[cite: 10].
 
 ---
 
 ## 1. 0/1 Knapsack Problem (Exhaustive Search)
-The goal of this task was to solve the $0/1$ Knapsack problem by exploring every possible combination of items ($2^n$ subsets) and recording the execution time for varying problem sizes $n$[cite: 4, 7].
+[cite_start]The goal of this task was to solve the $0/1$ Knapsack problem by exploring every possible combination of items ($2^n$ subsets) and recording the execution time for varying problem sizes $n$[cite: 4, 7].
 
 ### Execution Time Results
-The following data was gathered by running the algorithm on a Fedora-based system:
+The algorithm was executed on a Fedora-based system, yielding the following results:
 
 | $n$ | Time (s) | $n$ | Time (s) |
 | :--- | :--- | :--- | :--- |
@@ -38,19 +38,27 @@ The following data was gathered by running the algorithm on a Fedora-based syste
 | 14 | 0.0077 | **26** | **60.9302** |
 | 15 | 0.0168 | | |
 
-### Analysis
-* **Complexity:** The growth is clearly exponential, $O(2^n)$, as the time roughly doubles with each increment of $n$.
-* **10-Minute Limit:** Based on the doubling trend, $n=29$ is the largest problem size solvable within the 10-minute (600s) limit[cite: 6].
+### Complexity Analysis
+* **Growth Pattern:** The time complexity is $O(2^n)$. [cite_start]The doubling of execution time with each increment of $n$ confirms the exponential nature of exhaustive search[cite: 4].
+* [cite_start]**10-Minute Limit:** Based on these results, the maximum problem size solvable within 10 minutes (600s) is approximately **$n=29$**[cite: 6].
 
 ---
 
 ## 2. & 3. Graph Traversals
-I implemented both **DFS** and **BFS** using an **Adjacency List**[cite: 9, 11]. This data structure was chosen because it is more memory-efficient for sparse graphs and allows for faster iteration over a node's neighbors compared to an adjacency matrix.
+I implemented both **DFS** and **BFS** using an **Adjacency List**. [cite_start]This data structure was chosen for its space efficiency and faster neighbor iteration compared to an adjacency matrix[cite: 9, 11].
 
 
 
-* **DFS:** Explores as deep as possible along each branch before backtracking[cite: 8].
-* **BFS:** Explores all neighbor nodes at the present depth before moving to the next level[cite: 10].
+### Execution Results
+Using a test graph with nodes A through F, the algorithms produced the following traversal orders:
+
+**Depth First Search (DFS):**
+> `A B D E F C`
+* [cite_start]*Behavior:* The algorithm explores as deep as possible along each branch (A -> B -> D...) before backtracking to visit remaining neighbors[cite: 8].
+
+**Breadth First Search (BFS):**
+> `A B C D E F`
+* [cite_start]*Behavior:* The algorithm explores all neighbor nodes at the current depth (level by level: A -> neighbors B,C -> neighbors D,E,F) before moving deeper[cite: 10].
 
 ---
 
@@ -59,4 +67,4 @@ All implementations are written in **Python**.
 
 1. **Clone the repo:**
    ```bash
-   git clone [https://github.com/your-username/Analysis-of-Algorithms-Lab04.git](https://github.com/your-username/Analysis-of-Algorithms-Lab04.git)
+   git clone [https://github.com/ahwil10/
