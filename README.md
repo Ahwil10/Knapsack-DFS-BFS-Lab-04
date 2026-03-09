@@ -36,7 +36,7 @@ The algorithm was executed on a Fedora-based system, yielding the following resu
 | 12 | 0.0039 | 24 | 14.9444 |
 | 13 | 0.0052 | 25 | 30.1322 |
 | 14 | 0.0077 | **26** | **60.9302** |
-| 15 | 0.0168 | | |
+| 15 | 0.0168 | 
 
 ### Complexity Analysis
 * **Growth Pattern:** The time complexity is $O(2^n)$. [cite_start]The doubling of execution time with each increment of $n$ confirms the exponential nature of exhaustive search[cite: 4].
